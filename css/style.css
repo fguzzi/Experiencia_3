@@ -1,0 +1,105 @@
+/*  RESET CSS */
+*{
+ padding: 0px;
+ margin: 0px;
+ box-sizing: border-box;
+}
+
+/* FONTES */
+@font-face {
+    font-family: "Alatsy-Regular";
+    src: url(/fonts/Alatsi-Regular.ttf);
+}
+
+/* DESKTOP E TABLET */
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 350px;
+    margin-bottom: 40px;
+    align-content: center;
+}
+
+header .menu{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Alatsy-Regular" ;
+}
+
+header nav.menu{
+    background-color: chocolate;
+}
+
+header .imgfnd{
+    height: 350px;
+}
+
+.menu .item{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-stretch: expanded;
+}
+
+main{
+    background-color: rgb(96, 245, 163);
+}
+
+main .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+section .card-body{
+    text-align: justify;
+    border: solid 2px blue;
+    background-color: rgb(192, 199, 197);
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px){ 
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 600px;
+        background-color: chocolate;
+    }
+    
+    header .imgfnd{
+        width: 430px;
+    }
+
+    header .menu{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-right: 25px;
+        margin-left: 15px;
+        align-items: flex-start;
+    }
+    
+    header .menu .pesquisa{
+        width: 100px;
+    }
+    
+    main{
+        width: 600px;
+    }
+
+    section div.card{
+        width: 600px;
+    }
+
+    footer{
+        justify-content: end;   
+    }
+}
